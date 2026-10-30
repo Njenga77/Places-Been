@@ -2,10 +2,13 @@
 
 A website for keeping track of the places you've visited. Each place is an object with a location, landmarks, time of year and notes. Click a place's name to see its details.
 
+**Live site:** https://njenga77.github.io/Places-Been/
+**Address Book (code-along):** https://njenga77.github.io/Code-Along/
+
 ## Setup
 1. Clone this repository.
 2. Open `index.html` in your browser.
-3. To run the tests below, open DevTools, paste the contents of `scripts.js` into the console, then run each **Code** line.
+3. To run the tests below, open DevTools, paste the contents of `script.js` into the console, then run each **Code** line.
 
 ## Technologies
 HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegation)
