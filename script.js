@@ -40,3 +40,21 @@ function Place(location, landmarks, timeOfYear, notes) {
 Place.prototype.summary = function() {
   return this.location + " (" + this.timeOfYear + ")";
 };
+
+// User Interface Logic ---------
+let placeLog = new PlaceLog();
+
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const inputtedLocation = document.querySelector("input#new-location").value;
+  const inputtedLandmarks = document.querySelector("input#new-landmarks").value;
+  const inputtedTimeOfYear = document.querySelector("input#new-time-of-year").value;
+  const inputtedNotes = document.querySelector("input#new-notes").value;
+  let newPlace = new Place(inputtedLocation, inputtedLandmarks, inputtedTimeOfYear, inputtedNotes);
+  placeLog.addPlace(newPlace);
+  console.log(placeLog.places);
+}
+
+window.addEventListener("load", function() {
+  document.querySelector("form#new-place").addEventListener("submit", handleFormSubmission);
+});
