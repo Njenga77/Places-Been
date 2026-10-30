@@ -4,6 +4,11 @@ function PlaceLog() {
   this.currentId = 0;
 }
 
+PlaceLog.prototype.addPlace = function(place) {
+  place.id = this.assignId();
+  this.places[place.id] = place;
+};
+
 PlaceLog.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;

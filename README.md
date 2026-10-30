@@ -41,3 +41,11 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should increase currentId by 1 and return it each time it is called.
 **Code:** `placeLog.assignId();`
 **Expected Output:** `1` (then `2` on the next call)
+
+---
+
+**Describe:** PlaceLog.prototype.addPlace()
+
+**Test:** It should give a place an id and store it in places under that id.
+**Code:** `placeLog.addPlace(place); placeLog.places[place.id];`
+**Expected Output:** `Place { location: "Nairobi", landmarks: "Uhuru Park, KICC", timeOfYear: "December", notes: "Great food", id: 1 }`
