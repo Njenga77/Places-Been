@@ -75,3 +75,8 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should return false if no place has that id.
 **Code:** `placeLog.deletePlace(99);`
 **Expected Output:** `false`
+
+
+**Test:** It should never reuse a deleted place's id.
+**Code:** `placeLog.currentId;` (after deleting place 1 when 2 places were added)
+**Expected Output:** `2`
