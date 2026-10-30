@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Places You`ve Been</title>
+    <title>Places You've Been</title>
+    <link rel="stylesheets" href="styles.css">
 </head>
+
 <body>
-    
+    <h1>Places You've Been</h1>
+    <h2>Add a Place:</h2>
+    <form id="new-place">
+        <label for="new-location">Location</label>
+        <input type="text" id="new-location" name="new-location">
+        <label for="new-landmarks">Landmarks</label>
+        <input type="text" id="new-landmarks" name="new-landmarks">
+        <label for="new-time-of-year">Time of Year</label>
+        <input type="text" id="new-time-of-year" name="new-time-of-year">
+        <label for="new-notes">Notes</label>
+        <input type="text" id="new-notes" name="new-notes">
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Places (click a name):</h2>
+    <div id="places">
+    </div>
+
+    <div id="place-details" class="hidden">
+        <h2>Place Details:</h2>
+        <p>Location: <span class="location"></span></p>
+        <p>Landmarks: <span class="landmarks"></span></p>
+        <p>Time of Year: <span class="time-of-year"></span></p>
+        <p>Notes: <span class="notes"></span></p>
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
