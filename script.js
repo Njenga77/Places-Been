@@ -22,6 +22,9 @@ PlaceLog.prototype.findPlace = function(id) {
 };
 
 PlaceLog.prototype.deletePlace = function(id) {
+  if (this.places[id] === undefined) {
+    return false;
+  }
   delete this.places[id];
   return true;
 };
