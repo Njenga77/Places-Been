@@ -33,3 +33,11 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should return the place's location with its time of year in brackets.
 **Code:** `place.summary();`
 **Expected Output:** `"Nairobi (December)"`
+
+---
+
+**Describe:** PlaceLog.prototype.assignId()
+
+**Test:** It should increase currentId by 1 and return it each time it is called.
+**Code:** `placeLog.assignId();`
+**Expected Output:** `1` (then `2` on the next call)

@@ -4,6 +4,11 @@ function PlaceLog() {
   this.currentId = 0;
 }
 
+PlaceLog.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+};
+
 // Business Logic for Places ---------
 function Place(location, landmarks, timeOfYear, notes) {
   this.location = location;
