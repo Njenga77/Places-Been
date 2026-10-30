@@ -49,3 +49,11 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should give a place an id and store it in places under that id.
 **Code:** `placeLog.addPlace(place); placeLog.places[place.id];`
 **Expected Output:** `Place { location: "Nairobi", landmarks: "Uhuru Park, KICC", timeOfYear: "December", notes: "Great food", id: 1 }`
+
+---
+
+**Describe:** PlaceLog.prototype.findPlace()
+
+**Test:** It should return the place that matches the id.
+**Code:** `placeLog.findPlace(1);`
+**Expected Output:** `Place { location: "Nairobi", landmarks: "Uhuru Park, KICC", timeOfYear: "December", notes: "Great food", id: 1 }`
