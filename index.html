@@ -9,30 +9,46 @@
 </head>
 
 <body>
-    <h1>Places You've Been</h1>
-    <h2>Add a Place:</h2>
-    <form id="new-place">
-        <label for="new-location">Location</label>
-        <input type="text" id="new-location" name="new-location">
-        <label for="new-landmarks">Landmarks</label>
-        <input type="text" id="new-landmarks" name="new-landmarks">
-        <label for="new-time-of-year">Time of Year</label>
-        <input type="text" id="new-time-of-year" name="new-time-of-year">
-        <label for="new-notes">Notes</label>
-        <input type="text" id="new-notes" name="new-notes">
-        <button type="submit">Add</button>
-    </form>
-
-    <h2>Places (click a name):</h2>
-    <div id="places">
-    </div>
-
-    <div id="place-details" class="hidden">
-        <h2>Place Details:</h2>
-        <p>Location: <span class="location"></span></p>
-        <p>Landmarks: <span class="landmarks"></span></p>
-        <p>Time of Year: <span class="time-of-year"></span></p>
-        <p>Notes: <span class="notes"></span></p>
+    <div class="container">
+        <h1>Places You've Been</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <hr />
+                <h2>Add a Place:</h2>
+                <form id="new-place">
+                    <div class="form-group">
+                        <label for="new-location">Location</label>
+                        <input type="text" class="form-control" id="new-location" name="new-location">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-landmarks">Landmarks</label>
+                        <input type="text" class="form-control" id="new-landmarks" name="new-landmarks">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-time-of-year">Time of Year</label>
+                        <input type="text" class="form-control" id="new-time-of-year" name="new-time-of-year">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-notes">Notes</label>
+                        <input type="text" class="form-control" id="new-notes" name="new-notes">
+                    </div>
+                    <button type="submit" class="btn-primary">Add</button>
+                </form>
+                <hr />
+                <h2>Places (click a name):</h2>
+                <div id="places">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="place-details" class="hidden">
+                    <h2>Place Details:</h2>
+                    <p>Location: <span class="location"></span></p>
+                    <p>Landmarks: <span class="landmarks"></span></p>
+                    <p>Time of Year: <span class="time-of-year"></span></p>
+                    <p>Notes: <span class="notes"></span></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <script src="script.js"></script>

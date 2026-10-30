@@ -78,6 +78,11 @@ function handleFormSubmission(event) {
     let newPlace = new Place(inputtedLocation, inputtedLandmarks, inputtedTimeOfYear, inputtedNotes);
     placeLog.addPlace(newPlace);
     listPlaces(placeLog);
+
+    document.querySelector("input#new-location").value = null;
+    document.querySelector("input#new-landmarks").value = null;
+    document.querySelector("input#new-time-of-year").value = null;
+    document.querySelector("input#new-notes").value = null;
 }
 
 window.addEventListener("load", function () {
