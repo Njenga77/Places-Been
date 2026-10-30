@@ -15,7 +15,10 @@ PlaceLog.prototype.assignId = function() {
 };
 
 PlaceLog.prototype.findPlace = function(id) {
-  return this.places[id];
+  if (this.places[id] !== undefined) {
+    return this.places[id];
+  }
+  return false;
 };
 
 // Business Logic for Places ---------

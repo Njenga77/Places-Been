@@ -57,3 +57,8 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should return the place that matches the id.
 **Code:** `placeLog.findPlace(1);`
 **Expected Output:** `Place { location: "Nairobi", landmarks: "Uhuru Park, KICC", timeOfYear: "December", notes: "Great food", id: 1 }`
+
+
+**Test:** It should return false if no place has that id.
+**Code:** `placeLog.findPlace(99);`
+**Expected Output:** `false`
