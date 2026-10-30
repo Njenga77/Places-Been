@@ -25,3 +25,11 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should create a Place object with location, landmarks, timeOfYear and notes properties.
 **Code:** `let place = new Place("Nairobi", "Uhuru Park, KICC", "December", "Great food");`
 **Expected Output:** `Place { location: "Nairobi", landmarks: "Uhuru Park, KICC", timeOfYear: "December", notes: "Great food" }`
+
+---
+
+**Describe:** Place.prototype.summary()
+
+**Test:** It should return the place's location with its time of year in brackets.
+**Code:** `place.summary();`
+**Expected Output:** `"Nairobi (December)"`
