@@ -17,3 +17,11 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should create a PlaceLog object with an empty places object and a currentId of 0.
 **Code:** `let placeLog = new PlaceLog();`
 **Expected Output:** `PlaceLog { places: {}, currentId: 0 }`
+
+---
+
+**Describe:** Place()
+
+**Test:** It should create a Place object with location, landmarks, timeOfYear and notes properties.
+**Code:** `let place = new Place("Nairobi", "Uhuru Park, KICC", "December", "Great food");`
+**Expected Output:** `Place { location: "Nairobi", landmarks: "Uhuru Park, KICC", timeOfYear: "December", notes: "Great food" }`
