@@ -21,6 +21,11 @@ PlaceLog.prototype.findPlace = function(id) {
   return false;
 };
 
+PlaceLog.prototype.deletePlace = function(id) {
+  delete this.places[id];
+  return true;
+};
+
 // Business Logic for Places ---------
 function Place(location, landmarks, timeOfYear, notes) {
   this.location = location;

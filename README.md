@@ -62,3 +62,11 @@ HTML, CSS, Bootstrap 5, JavaScript (constructors, prototypes, DOM, event delegat
 **Test:** It should return false if no place has that id.
 **Code:** `placeLog.findPlace(99);`
 **Expected Output:** `false`
+
+---
+
+**Describe:** PlaceLog.prototype.deletePlace()
+
+**Test:** It should remove the place with the matching id and return true.
+**Code:** `placeLog.deletePlace(1);`
+**Expected Output:** `true` (and `placeLog.places` is now `{}`)
