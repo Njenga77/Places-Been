@@ -58,6 +58,17 @@ function listPlaces(placeLogToDisplay) {
     placesDiv.append(ul);
 }
 
+function displayPlaceDetails(event) {
+    const place = placeLog.findPlace(event.target.id);
+    if (place) {
+        document.querySelector(".location").innerText = place.location;
+        document.querySelector(".landmarks").innerText = place.landmarks;
+        document.querySelector(".time-of-year").innerText = place.timeOfYear;
+        document.querySelector(".notes").innerText = place.notes;
+        document.querySelector("div#place-details").removeAttribute("class");
+    }
+}
+
 function handleFormSubmission(event) {
     event.preventDefault();
     const inputtedLocation = document.querySelector("input#new-location").value;
@@ -71,4 +82,5 @@ function handleFormSubmission(event) {
 
 window.addEventListener("load", function () {
     document.querySelector("form#new-place").addEventListener("submit", handleFormSubmission);
+    document.querySelector("div#places").addEventListener("click", displayPlaceDetails);
 });
